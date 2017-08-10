@@ -101,7 +101,7 @@ DWORD WINAPI SendMessageThread(LPVOID IpParameter)
 	while (1) {
 		string talk;
 		char talkbuffer[200];
-		gets(talkbuffer);  
+		gets_s(talkbuffer);  
 		int iRand = rand() % 3;
 		Sleep(iRand * 1000);
 		if (1 == iRand)
